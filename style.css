@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: radial-gradient(circle at top left, #1b1b1b, #0d0d0d);
+    color: #f0e6d2;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #4a1f0a 0%, #2b1a0b 100%);
+    border: 2px solid #d4af37;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    width: 85%;
+    max-width: 1100px;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .text-section {
+    flex: 1;
+  }
+  
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    color: #f7d88a;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f5e8c7;
+    max-width: 550px;
+  }
+  
+  .highlight {
+    color: #ffce54;
+    font-weight: 600;
+  }
+  
+  .cta {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #c19a40, #e6c36a);
+    color: #1b1b1b;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 208, 102, 0.8);
+  }
+  
+  .character {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .character img {
+    width: 100%;
+    max-width: 420px;
+    filter: drop-shadow(0 0 20px rgba(255, 180, 80, 0.4));
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @media (max-width: 850px) {
+    .container {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 30px;
+    }
+  
+    .text-section p {
+      margin: 0 auto;
+    }
+  }
+  
